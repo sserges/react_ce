@@ -6,6 +6,13 @@
 //     return <h1>Hello Vishwasssss !</h1>
 // }
 
-export const Greet = () => <h1>Hello Vishwaxy!</h1>
+export const Greet = ({ name, heroName, children }) => (
+  <>
+    <h1>
+      Hello {name}! {heroName}
+    </h1>
+    {children}
+  </>
+)
 
 // export default Greet
